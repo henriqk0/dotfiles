@@ -1,0 +1,7 @@
+[credential]
+  helper = store
+[user]
+  email = 171154572+henriqk0@users.noreply.github.com
+  name = henriqk0
+[pull]
+  rebase = true
