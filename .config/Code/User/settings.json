@@ -1,0 +1,148 @@
+{
+    "editor.fontFamily": "JetbrainsMono Nerd Font Mono",
+    "workbench.iconTheme": "gruvbox-material-icon-theme",
+    "workbench.colorTheme": "Gruvbox Dark Medium",
+    "editor.minimap.enabled": false,
+    "editor.fontWeight": "normal",
+    "editor.letterSpacing": 0.4,
+    "editor.fontSize": 12.5,
+    "window.zoomLevel": 1,
+    "editor.lineHeight": 1.8,
+    "editor.rulers": [80,120],
+    "editor.renderLineHighlight": "gutter",
+    "workbench.editor.labelFormat": "short",
+    "explorer.compactFolders": false,
+    "terminal.integrated.fontFamily": "MesloLGS Nerd Font Mono",
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.fontSize": 13,
+    "window.menuBarVisibility": "toggle",
+    "terminal.integrated.letterSpacing": 0.1,
+    "workbench.activityBar.location": "hidden",
+    "workbench.sideBar.location": "left",
+    "breadcrumbs.enabled": false,
+    
+
+    "explorer.fileNesting.patterns": {
+        "*.ts": "${capture}.js",
+        "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+        "*.jsx": "${capture}.js",
+        "*.tsx": "${capture}.ts",
+        "tsconfig.json": "tsconfig.*.json",
+        "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+        "*.sqlite": "${capture}.${extname}-*",
+        "*.db": "${capture}.${extname}-*",
+        "*.sqlite3": "${capture}.${extname}-*",
+        "*.db3": "${capture}.${extname}-*",
+        "*.sdb": "${capture}.${extname}-*",
+        "*.s3db": "${capture}.${extname}-*"
+    },
+
+    
+    "vim.useSystemClipboard": true,
+    "vim.leader": "<space>",
+    "vim.normalModeKeyBindings": [
+        // ctrl + ` to open/close terminal
+        {
+            "before": ["<C-a>"],
+            "after": ["g", "g", "V", "G"],
+        },
+        {
+            "before": ["<leader>", "b", "b"],
+            "commands": ["workbench.action.nextEditor"]
+        },
+        {
+            "before": ["<leader>", "b", "d"],
+            "commands": ["workbench.action.closeActiveEditor"]
+        },
+        {
+            "before": ["<leader>", "q"],
+            "commands": ["workbench.action.quickOpenView"]
+        },
+
+        {
+            "before":["<C-n>"],
+            "commands": [
+                ":nohl",
+            ] 
+        },
+        {
+            "before": ["<leader>", "e"],
+            "commands": ["workbench.view.explorer"]
+            // keybindings.json via “Ctrl + Shift + P” → “Preferences: Open Keyboard Shortcuts (JSON)” to see 
+            // complements of this; also see https://dev.to/ansonh/10-vs-code-vim-tricks-to-boost-your-productivity-1b0n 
+        },
+
+        {
+            "before": ["g", "p", "d"],
+            "commands": ["editor.action.peekDefinition"]
+        },
+        {
+            "before": ["g", "h"],
+            "commands": ["editor.action.showDefinitionPreviewHover"]
+        },
+        {
+            "before": ["g", "i"],
+            "commands": ["editor.action.goToImplementation"]
+        },
+        {
+            "before": ["g", "p", "i"],
+            "commands": ["editor.action.peekImplementation"]
+        },
+        {
+            "before": ["g", "q"],
+            "commands": ["editor.action.quickFix"]
+        },
+        {
+            "before": ["g", "r"],
+            "commands": ["editor.action.referenceSearch.trigger"]
+        },
+        {
+            "before": ["g", "t"],
+            "commands": ["editor.action.goToTypeDefinition"]
+        },
+        {
+            "before": ["g", "p", "t"],
+            "commands": ["editor.action.peekTypeDefinition"]
+        },
+        {
+            "key": "h",
+            "command": "editor.action.scrollLeftHover",
+            "when": "editorHoverFocused"
+        },
+        {
+            "key": "j",
+            "command": "editor.action.scrollDownHover",
+            "when": "editorHoverFocused"
+        },
+        {
+            "key": "k",
+            "command": "editor.action.scrollUpHover",
+            "when": "editorHoverFocused"
+        },
+        {
+            "key": "l",
+            "command": "editor.action.scrollRightHover",
+            "when": "editorHoverFocused"
+        }
+    ],
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors.normal": ["#a89984", "#282828"],
+    "vim.statusBarColors.insert": "#83a598",
+    "vim.statusBarColors.visual": "#fe8019",
+    "vim.statusBarColors.visualline": "#fe8019",
+    "vim.statusBarColors.visualblock": "#A3BE8C",
+    "vim.statusBarColors.replace": "#8ec07c",
+    "vim.statusBarColors.commandlineinprogress": "#fabd2f",
+    "vim.statusBarColors.searchinprogressmode": "#fabd2f",
+    "vim.statusBarColors.easymotionmode": "#fabd2f",
+    "vim.statusBarColors.easymotioninputmode": "#fabd2f",
+    "vim.statusBarColors.surroundinputmode": "#fabd2f",
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#a89984",
+        "statusBar.noFolderBackground": "#a89984",
+        "statusBar.debuggingBackground": "#a89984",
+        "statusBar.foreground": "#282828",
+        "statusBar.debuggingForeground": "#282828"
+    },
+}
